@@ -19,7 +19,7 @@ catch{
                 console.log(ai)
                 // 2. create a div 
                 const aiCard = document.createElement('div');
-                aiCard.classList = `card  w-96 bg-gray-100 shadow-xl`;
+                aiCard.classList = `card  bg-gray-100 p-4 shadow-xl`;
                 // 3.set innteHTML
                 aiCard.innerHTML = `<figure><img src="${ai.image}" alt="Shoes" /></figure>
                 <div class="card-body">
