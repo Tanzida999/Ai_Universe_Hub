@@ -24,10 +24,19 @@ catch{
                 aiCard.innerHTML = `<figure><img src="${ai.image}" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title font-bold">Features</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <ul class ="list-disc pl-6"> ${ai.features.map(feature => `<li>${feature}</li>`).join('')}
+                  </ul>
+                  <h2 class ="font-bold">${ai.name}</h2>
+                  <p class="text-left justify-items-end justify-end">${ai.published_in}</p>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
+                  <button class="btn bg-transparent border-none flex items-center">
+
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-5 5a1 1 0 1 1-1.414-1.414L14.586 11H4a1 1 0 0 1 0-2h10.586L10.293 6.707a1 1 0 0 1 0-1.414z" clip-rule="evenodd" />
+                      </svg>
+                  </button>
+              </div>
+              
                 </div>`;
                 // // // Appendchild
                 aiContainer.appendChild(aiCard);
